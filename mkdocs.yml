@@ -5,17 +5,20 @@ theme:
   name: material
   language: ar
   direction: rtl
+  custom_dir: overrides
   font: false
   icon:
     logo: material/book-open-page-variant-outline
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-night
         name: الوضع الليلي
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: custom
       accent: custom
       toggle:

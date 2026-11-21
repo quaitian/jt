@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <!-- يُخبر المتصفح أن للموقع وضعًا فاتحًا وداكنًا خاصّين به، فلا يقلب ألوانه تلقائيًا -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbf7ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17130f" media="(prefers-color-scheme: dark)">
+{% endblock %}
