@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600&display=swap");
+
+:root {
+  --md-text-font: "Noto Naskh Arabic", "Amiri", serif;
+}
+
+/* متن المقالات بخط أميري التراثي */
+.md-typeset {
+  font-family: "Amiri", "Noto Naskh Arabic", serif;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Amiri", serif;
+  font-weight: 700;
+}
+
+/* عرض مريح للقراءة */
+.md-grid {
+  max-width: 1300px;
+}
+
+/* أرقام الهوامش في المتن */
+.md-typeset .footnote-ref {
+  font-weight: 700;
+}
+
+/* قائمة الهوامش في آخر الصفحة بالأرقام العربية */
+.md-typeset .footnote ol {
+  list-style-type: arabic-indic;
+  font-size: 0.9rem;
+}
+
+.md-typeset .footnote li::marker {
+  content: "(" counter(list-item, arabic-indic) ") ";
+}
+
+.md-typeset .footnote > hr {
+  display: none;
+}
+
+/* ملاحظات المترجم */
+.md-typeset .admonition.note {
+  font-size: 0.95rem;
+}

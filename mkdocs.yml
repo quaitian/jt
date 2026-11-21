@@ -1,0 +1,61 @@
+site_name: نصوص يهودية بالعربية
+site_description: ترجمات عربية للنصوص الدينية اليهودية الكلاسيكية عن أصولها العبرية والآرامية، مع هوامش شارحة
+
+theme:
+  name: material
+  language: ar
+  direction: rtl
+  font: false
+  palette:
+    - scheme: default
+      primary: brown
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: الوضع الليلي
+    - scheme: slate
+      primary: brown
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: الوضع النهاري
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - content.footnote.tooltips
+
+plugins:
+  - search
+
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - admonition
+  - md_in_html
+  - toc:
+      permalink: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/arabic-digits.js
+
+# ===== فهرس الموقع =====
+# المستوى الأول: أبواب المكتبة (التلمود البابلي، المِشنا، المدراش، التفاسير...)
+# ويظهر كلّ باب لسانًا في أعلى الموقع على الحاسوب.
+# كل نص جديد يُضاف تحت بابه، والشكل:
+#   - العنوان بالعربية: المجلد/اسم-الملف.md
+# لا يُضاف باب جديد إلا ومعه صفحة واحدة على الأقل.
+nav:
+  - الرئيسية:
+      - index.md
+      - عن الترجمة: about.md
+  - التلمود البابلي:
+      - قسم الأضرار:
+          - سنهدرين:
+              - كلمة إلى القارئ: talmud-bavli/nezikin/sanhedrin/intro.md
