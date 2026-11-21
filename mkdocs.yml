@@ -6,16 +6,18 @@ theme:
   language: ar
   direction: rtl
   font: false
+  icon:
+    logo: material/book-open-page-variant-outline
   palette:
     - scheme: default
-      primary: brown
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: الوضع الليلي
     - scheme: slate
-      primary: brown
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: الوضع النهاري
