@@ -298,3 +298,16 @@
     font-size: 1.75rem;
   }
 }
+
+/* بعض متصفحات أندرويد (كمتصفح سامسونج) لا تقلب ألوان الموقع إذا وجدت
+   فيه أنماطًا خاصة بالوضع الداكن مكتوبة بهذه الطريقة */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
