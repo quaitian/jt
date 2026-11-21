@@ -14,6 +14,8 @@
   --md-default-bg-color: var(--paper);
   --md-default-fg-color: var(--ink);
   --md-default-fg-color--light: var(--ink-soft);
+  --md-default-fg-color--lighter: #8c7a66;
+  --md-default-fg-color--lightest: #e8dcc6;
   --md-typeset-color: var(--ink);
   --md-typeset-a-color: #8a3b12;
   --md-primary-fg-color: var(--paper);
@@ -38,6 +40,8 @@
   --md-default-bg-color: var(--paper);
   --md-default-fg-color: var(--ink);
   --md-default-fg-color--light: var(--ink-soft);
+  --md-default-fg-color--lighter: #8f826c;
+  --md-default-fg-color--lightest: #2c251c;
   --md-typeset-color: var(--ink);
   --md-typeset-a-color: var(--gold);
   --md-primary-fg-color: var(--paper);
@@ -238,8 +242,24 @@
   color: var(--ink-soft);
   line-height: 1.7;
 }
-.shelf--soon {
-  opacity: 0.55;
+.md-typeset .shelf--soon {
+  background: transparent;
+  border-style: dashed;
+}
+.shelf--soon b::after {
+  content: "قريبًا";
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--gold);
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0 0.6em;
+  margin-inline-start: 0.6em;
+  vertical-align: middle;
+}
+.shelf--soon b {
+  display: block;
 }
 
 /* ===== الفهرس الجانبي ===== */
@@ -251,6 +271,22 @@
 .md-nav__title {
   font-family: "Amiri", serif;
   font-size: 0.85rem;
+}
+
+/* عنوان القائمة الجانبية على الهاتف */
+.md-nav--primary .md-nav__title {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  background: var(--paper);
+}
+.md-nav__link {
+  color: var(--ink);
 }
 
 /* ===== الهاتف ===== */

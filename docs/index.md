@@ -1,4 +1,5 @@
 ---
+title: الرئيسية
 hide:
   - toc
   - navigation
