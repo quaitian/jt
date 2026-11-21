@@ -64,3 +64,6 @@ nav:
       - قسم الأضرار:
           - سنهدرين:
               - كلمة إلى القارئ: talmud-bavli/nezikin/sanhedrin/intro.md
+
+extra:
+  generator: false
