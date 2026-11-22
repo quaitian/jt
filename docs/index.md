@@ -26,5 +26,6 @@ hide:
 
 ## أحدث المنشور
 
+- [مقالات ‹ حواشٍ على فرشة «وخرج»](articles/haaros-vayeitzei.md)
 - [مقالات ‹ لماذا يُكتب سفر التوراة على الرَّقّ؟](articles/torah-parchment.md)
 - [التلمود البابلي ‹ سنهدرين ‹ كلمة إلى القارئ](talmud-bavli/nezikin/sanhedrin/intro.md)
